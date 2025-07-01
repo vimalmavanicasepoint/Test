@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Candidate Information Form</title>
+    <style type="text/css">
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        label{
+            color: #171713;
+        }
+        *:focus{
+            outline: none;
+        }
+        *{
+             font-family: "Open Sans", sans-serif;    
+             -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;       
+        }
+        .form-control{
+            margin-bottom: 10px;
+            label{
+                font-size: 13px;padding-bottom: 5px;display: inline-block;font-weight: 600;
+            }
+            textarea,
+            input[type="email"],
+            input[type="text"]{
+                border-bottom: 2px solid #003145;font-size: 14px;border: 0;border-bottom: 2px solid #003145;color: #171713;display: block;width: 100%;height: 30px;
+            }
+        }
+        .main-title{
+            background-color: #f7ea48;color: #171713;font-size: 20px;margin: 0;padding: 8px 45px 8px 20px;display: inline-block;position: relative;
+            span{
+                position: absolute;height: 100%;width:20px;right: -9px;top:0;transform: skewX(23deg);background-color: #171713;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <header style="background-color: #003145;display: flex;align-items: center;height: 120px;">
+        <div style="padding: 30px;height: 120px;background-color: #f3f5f6;display: flex;align-items: center;justify-content: center;">
+            <img src="https://images.ctfassets.net/5y0368jijumi/6zxhkJVkbVZSdcOklpank0/198ae8475e36a3419463e68f3c1dc0fd/OPEXUS___Casepoint.svg" width="300" alt="Casepoint">
+        </div>
+        <h2 style="font-size: 35px;color: #fff;font-weight: 700;padding: 30px;margin: 0;">Candidate Information Form</h2>
+    </header>
+    <section style="padding: 8px;margin-bottom: 10px;">
+        <div class="form-control">
+            <label for="AppliedFor">Applied For</label>
+            <input type="text" id="AppliedFor">
+        </div>
+    </section>
+    <h3 class="main-title">Basic Information<span></span></h3>
+    <section style="padding: 8px;">
+        <div style="display: flex;">
+            <div style="flex:1; overflow: auto;padding-right: 15px;">
+                <div class="form-control">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" />
+                </div>
+                <div class="form-control">
+                    <label for="Address">Address</label>
+                    <textarea type="text" id="Address"></textarea>
+                </div>
+            </div>
+            <div style="background-color:#f3f5f6;border-radius: 4px;display: flex;justify-content: center;align-items: center;padding: 16px;">
+                <input type="file">
+            </div>
+        </div>
+        <div style="display: flex;">
+            <div class="form-control" style="width: 50%;padding-right: 10px;">
+                <label for="ContactNo">ContactNo</label>
+                <input type="text" id="ContactNo"/>
+            </div>
+            <div class="form-control" style="width: 50%;padding-left: 10px;">
+                <label for="AlternateNo">Alternate No</label>
+                <input type="text" id="AlternateNo"/>
+            </div>
+        </div>
+        <div style="display: flex;">
+            <div class="form-control" style="width: 33%;padding-right: 10px;">
+                <label for="BirthDate">Birth Date</label> 
+                <input type="text" id="BirthDate" placeholder="DDMMYY">
+            </div>
+            <div class="form-control" style="width: 33%;padding-left: 10px;">
+                <label for="" style="display: block;padding-bottom: 8px;">Gender</label>
+                <input type="radio" name="gender"> Male
+                <input type="radio" name="gender"> Female
+                <input type="radio" name="gender"> Other
+            </div>
+            <div class="form-control" style="width: 33%;padding-left: 10px;">
+                <label for="BloodGroup">Blood group</label> 
+                <input type="text" id="BloodGroup" />
+            </div>
+        </div>
+        <div style="display: flex;">
+            <div class="form-control" style="width: 50%;padding-right: 10px;">
+                <label for="MaritalStatus">Marital Status</label>
+                <input type="text" id="MaritalStatus"/>
+            </div>
+            <div class="form-control" style="width: 50%;padding-left: 10px;">
+                <label for="Email">Email</label>
+                <input type="email" id="Email"/>
+            </div>
+        </div>
+    </section>
+  </body>
+</html>
